@@ -1,7 +1,5 @@
 '''
 TPE algorithm to adjust PID parameters in offline mode
-in paper: take average of optimal PID parameters based on delta_t samples w/ target (for each sample do TPE)
-in code: the optimal PID parameters based on prediction w/o target at 'current' time step t (a 'fake' online time step)
 '''
 from hyperopt import fmin, tpe, hp, rand
 import numpy as np
